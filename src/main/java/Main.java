@@ -12,7 +12,7 @@ import java.util.Optional;
 
 public class Main {
     public static void main(final String[] args){
-        final GatewayDiscordClient client = DiscordClientBuilder.create("ODAwNDY5MDkyMjM4NjIyNzUw.YASk7w.3nrRmcWxQqDeIhS2-hPaA5ZSq6U").build().login().block();
+        final GatewayDiscordClient client = DiscordClientBuilder.create("Key goes here").build().login().block();
         client.on(MessageCreateEvent.class).subscribe(event -> {
             final Message message = event.getMessage();
             if(message.getContent().contains("UwU")
